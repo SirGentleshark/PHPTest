@@ -1,18 +1,19 @@
 # PHP test
 # IDENTIFIED BAD PRACTICES
 
-- Classes:
+- Done
     - Lack of code comments
+    - Lack of Namespace declaration
     - Protected rather than private properties
     - No type hint when declaring properties
     - Lack of return type hint for Getters
     - Use of string for DateTime rather than immutible format like DateTimeImmutable
-    - Lack of Namespace declaration
-    - Setter methods did not allow for method chaining (no return self)
+    - Setter methods did not allow for method chaining by having no return value
 
-  - Utils:
-    - Lack of Code comments
-    - Lack of Namespace declaration
-    - Use of Singleton pattern and direct file requirements (NOT FIXED)
-    - SQL Queries aren't parameterized to prevent SQL injections (PARTIAL FIX)
-    - No return type hints
+  - To be done
+    - No use of composer for autoload to make proper use of Namespace
+    - No Try/Catch error handingT
+    - Remove use of Singleton pattern
+    - SQL Queries aren't parameterized to prevent SQL injections
+
+    

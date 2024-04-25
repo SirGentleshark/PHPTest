@@ -1,9 +1,10 @@
 <?php
 
 //NAMESPACE DECLARATIONS
-use App\Utils\NewsManager;
-use App\Utils\CommentManager;
-use App\Utils\DB;
+namespace App;
+use App\utils\NewsManager;
+use App\utils\CommentManager;
+use App\utils\DB;
 
 //INITIALIZATION SCRIPT & FILE VALIDATION
 define('ROOT', __DIR__);

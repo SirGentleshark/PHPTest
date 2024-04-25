@@ -1,7 +1,7 @@
 <?php
 
 //NAMESPACE DECLARATIONS
-namespace App\Utils;
+namespace App\utils;
 use PDO;
 
 class DB

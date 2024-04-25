@@ -1,9 +1,9 @@
 <?php
 
 //NAMESPACE DECLARATIONS
-namespace App\Utils;
-use App\Class\Comment;
-use App\Utils\DB;
+namespace App\utils;
+use App\class\Comment;
+use App\utils\DB;
 use DateTimeImmutable;
 
 class CommentManager
@@ -52,6 +52,7 @@ class CommentManager
 
 	// UNUSED
 	// Insert provided input of body and newsID into DB accessed via getInstance(), returns updated DB
+	/*
 	public function addCommentForNews($body, $newsId) : int
 	{
 		$db = DB::getInstance();
@@ -59,13 +60,16 @@ class CommentManager
 		$db->exec($sql);
 		return $db->lastInsertId($sql);
 	}
+	*/
 
 	// UNUSED
 	// Removes comment corresponding to provided comment id, from DB accessed via getInstance(), returns updated DB
+	/*
 	public function deleteComment($id) : int
 	{
 		$db = DB::getInstance();
 		$sql = "DELETE FROM `comment` WHERE `id`=" . $id;
 		return $db->exec($sql);
 	}
+	*/
 }

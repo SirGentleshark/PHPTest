@@ -1,8 +1,8 @@
 <?php
 
 //NAMESPACE DECLARATIONS
-namespace App\Utils;
-use App\Class\News;
+namespace App\utils;
+use App\class\News;
 
 class NewsManager
 {
@@ -47,10 +47,9 @@ class NewsManager
 		return $news;
 	}
 
-	/**
-	 * NOT IN USE
-	* add a record in news table
-	*/
+	// UNUSED
+	// add a record in news table
+	/*
 	public function addNews($title, $body)
 	{
 		$db = DB::getInstance();
@@ -58,11 +57,11 @@ class NewsManager
 		$db->exec($sql);
 		return $db->lastInsertId($sql);
 	}
-
-	/**
-	 * NOT IN USE
-	* deletes a news, and also linked comments
 	*/
+
+	// UNUSED
+	// deletes a record in news table based on provided id
+	/*
 	public function deleteNews($id)
 	{
 		$comments = CommentManager::getInstance()->listComments();
@@ -82,4 +81,5 @@ class NewsManager
 		$sql = "DELETE FROM `news` WHERE `id`=" . $id;
 		return $db->exec($sql);
 	}
+	*/
 }

@@ -1,7 +1,7 @@
 <?php
 
 //NAMESPACE DECLARATIONS
-namespace App\Class;
+namespace App\class;
 use DateTimeImmutable;
 
 class News
